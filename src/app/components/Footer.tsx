@@ -49,19 +49,39 @@ const Footer = () => {
           <div className="flex flex-col gap-y-12">
             <LogoWhite />
             <div className="flex gap-x-3">
-              <Link href="https://www.facebook.com">
+              <Link
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="no referrer"
+              >
                 <IconFacebook />
               </Link>
-              <Link href="https://www.youtube.com">
+              <Link
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="no referrer"
+              >
                 <IconYoutube />
               </Link>
-              <Link href="https://www.twitter.com">
+              <Link
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="no referrer"
+              >
                 <IconTwitter />
               </Link>
-              <Link href="https://www.pinterest.com">
+              <Link
+                href="https://www.pinterest.com"
+                target="_blank"
+                rel="no referrer"
+              >
                 <IconPinterest />
               </Link>
-              <Link href="https://www.instagram.com">
+              <Link
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="no referrer"
+              >
                 <IconInstagram />
               </Link>
             </div>
