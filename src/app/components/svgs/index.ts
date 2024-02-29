@@ -1,0 +1,15 @@
+export { default as IntroBgDesktop } from "./bg-intro-desktop.svg";
+export { default as IntroBgMobile } from "./bg-intro-mobile.svg";
+export { default as IconApi } from "./icon-api.svg";
+export { default as IconBudgeting } from "./icon-budgeting.svg";
+export { default as IconClose } from "./icon-close.svg";
+export { default as IconFacebook } from "./icon-facebook.svg";
+export { default as IconHamburger } from "./icon-hamburger.svg";
+export { default as IconInstagram } from "./icon-instagram.svg";
+export { default as IconOnBoarding } from "./icon-onboarding.svg";
+export { default as IconOnline } from "./icon-online.svg";
+export { default as IconPinterest } from "./icon-pinterest.svg";
+export { default as IconTwitter } from "./icon-twitter.svg";
+export { default as IconYoutube } from "./icon-youtube.svg";
+export { default as Logo } from "./logo.svg";
+export { default as LogoWhite } from "./logo-white.svg";
