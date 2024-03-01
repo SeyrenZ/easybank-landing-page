@@ -1,4 +1,5 @@
 export { default as IntroBgDesktop } from "./bg-intro-desktop.svg";
+export { default as IntroBgDesktop2 } from "./bg-intro-desktop-2.svg";
 export { default as IntroBgMobile } from "./bg-intro-mobile.svg";
 export { default as IconApi } from "./icon-api.svg";
 export { default as IconBudgeting } from "./icon-budgeting.svg";

@@ -1,32 +1,55 @@
 import React from "react";
-import { IntroBgDesktop } from "./svgs";
+import { IntroBgDesktop, IntroBgDesktop2, IntroBgMobile } from "./svgs";
 import { Button } from ".";
 import Image from "next/image";
 
 const Header = () => {
   return (
     <>
-      <div className="w-full h-[680px] pt-10 bg-[#fafafa]">
-        <div className="w-full max-w-[1440px] pl-10 mx-auto flex flex-col justify-start relative">
+      <div className="w-full h-[1000px] sm:h-[800px] lg:h-[680px] bg-[#fafafa]">
+        <div className="w-full max-w-[1440px] pl-10 smMd:pl-0 mx-auto flex flex-col justify-start items-center relative gap-y-8 lg:gap-y-0">
+          <div className="w-full flex justify-center z-20 lg:hidden relative overflow-hidden">
+            <IntroBgMobile className="absolute z-0 w-full md:hidden" />
+            <IntroBgDesktop2 className="absolute z-0 bottom-[-200px]  left-0 sm:hidden" />
+            <div className="relative z-10">
+              <Image
+                src="/image-mockups-topcrop.png"
+                width={600}
+                height={600}
+                alt="."
+              />
+            </div>
+          </div>
+          <Image
+            src="/image-mockups-crop.png"
+            width={500}
+            height={500}
+            alt="."
+            className="absolute z-20 right-0 top-0 block xl:hidden smMd:hidden"
+          />
           <Image
             src="/image-mockups-crop.png"
             width={600}
             height={600}
             alt="."
-            className="absolute z-20 right-0 top-[-70px]"
+            className=" absolute z-20 right-0 top-[-70px] hidden xl:block smMd:hidden"
           />
           <div className="w-full h-[680px] pb-10 relative overflow-hidden ">
-            <IntroBgDesktop className="bottom-[-120px] right-[-470px] absolute z-0 " />
-            <div className="h-full flex items-center relative z-10 ">
-              <div className="flex flex-col gap-y-5">
-                <div className="text-6xl text-darkBlue leading-[1.10]">
+            <div className="h-full flex items-center smMd:items-start smMd:justify-center relative z-10">
+              <IntroBgDesktop className="bottom-[-120px] right-[-600px] xl:right-[-470px] absolute  block smMd:hidden" />
+              <div className="flex flex-col gap-y-5 smMd:items-center">
+                <div className="text-5xl xl:text-6xl text-darkBlue leading-[1.10] text-center lg:text-left">
                   Next generation <br />
                   digital banking
                 </div>
-                <div className="text-xl text-left text-zinc-400">
-                  Take your financial life online. Your Easybank account
-                  <br /> will be a one-stop-shop for spending, saving,
-                  <br /> budgeting, investing. and much more
+                <div className="text-md xl:text-xl text-zinc-400  text-center lg:text-left">
+                  Take your financial life online. Your Easybank{" "}
+                  <br className="block xl:hidden" /> account
+                  <br className="hidden xl:block" /> will be a one-stop-shop for
+                  spending, <br className="hidden sm:block" />
+                  saving,
+                  <br className="sm:hidden" /> budgeting, investing. and much
+                  more
                 </div>
                 <div className="mt-5">
                   <Button />

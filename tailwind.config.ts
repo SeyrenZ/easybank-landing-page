@@ -17,6 +17,7 @@ const config: Config = {
         hero: "url('/image-mockups.png')",
       },
       screens: {
+        smMd: { max: "1023px" },
         sm: { max: "640px" },
         // => @media (min-width: 640px) { ... }
 

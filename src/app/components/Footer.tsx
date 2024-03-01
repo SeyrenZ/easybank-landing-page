@@ -44,9 +44,9 @@ const Footer = () => {
   ];
   return (
     <div className="w-full h-auto bg-darkBlue ">
-      <div className="w-full max-w-[1440px] mx-auto h-auto px-10 py-10 flex items-center justify-between">
-        <div className="flex items-center justify-start gap-x-40">
-          <div className="flex flex-col gap-y-12">
+      <div className="w-full max-w-[1440px] mx-auto h-auto px-10 py-10 gap-y-10 lg:gap-y-0 flex smMd:flex-col items-center justify-between">
+        <div className="flex smMd:flex-col  items-center justify-start gap-x-40 gap-y-8 lg:gap-y-0">
+          <div className="flex  flex-col smMd:items-center gap-y-8 lg:gap-y-12">
             <LogoWhite />
             <div className="flex gap-x-3">
               <Link
@@ -86,15 +86,19 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-3 text-sm text-white">
             {links.map((link) => (
-              <Link key={link.name} href={link.link}>
+              <Link
+                key={link.name}
+                href={link.link}
+                className="smMd:text-center"
+              >
                 {link.name}
               </Link>
             ))}
           </div>
         </div>
-        <div className="flex flex-col items-end gap-y-6">
+        <div className="flex flex-col items-end smMd:items-center gap-y-6">
           <Button />
           <div className="text-sm text-zinc-400">
             © Easybank. All Rights Reserved{" "}
