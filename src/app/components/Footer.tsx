@@ -44,7 +44,7 @@ const Footer = () => {
   ];
   return (
     <div className="w-full h-auto bg-darkBlue ">
-      <div className="w-full max-w-[1440px] mx-auto h-auto pl-32 py-10 flex items-center justify-between">
+      <div className="w-full max-w-[1440px] mx-auto h-auto px-10 py-10 flex items-center justify-between">
         <div className="flex items-center justify-start gap-x-40">
           <div className="flex flex-col gap-y-12">
             <LogoWhite />

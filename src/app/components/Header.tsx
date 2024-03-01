@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <div className="w-full h-[680px] pt-10 bg-[#fafafa]">
-        <div className="pl-32 w-full max-w-[1440px] mx-auto flex flex-col justify-start relative">
+        <div className="w-full max-w-[1440px] pl-10 mx-auto flex flex-col justify-start relative">
           <Image
             src="/image-mockups-crop.png"
             width={600}
