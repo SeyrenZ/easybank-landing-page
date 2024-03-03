@@ -3,7 +3,7 @@ import { IconApi, IconBudgeting, IconOnBoarding, IconOnline } from "./svgs";
 
 const Content1 = () => {
   return (
-    <div className="w-full h-auto bg-[#f3f4f6] relative z-10">
+    <div className="w-full h-auto bg-[#f3f4f6] relative z-20">
       <div className="w-full max-w-[1440px] mx-auto px-10 h-auto py-20 flex flex-col justify-center items-center lg:items-start">
         <div className="flex flex-col gap-y-5">
           <div className="text-4xl text-darkBlue text-center lg:text-left">
