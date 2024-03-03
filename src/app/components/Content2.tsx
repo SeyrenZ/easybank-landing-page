@@ -36,7 +36,7 @@ const Content2 = () => {
     },
   ];
   return (
-    <div className="w-full h-auto bg-[#fafafa]">
+    <div className="w-full h-auto bg-[#fafafa] ">
       <div className="w-full max-w-[1440px] mx-auto px-10 sm:px-0 py-20">
         <div className="flex flex-col justify-center items-center lg:items-start gap-y-5">
           <div className="text-4xl text-darkBlue">Latest Articles</div>

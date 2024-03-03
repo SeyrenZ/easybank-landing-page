@@ -57,10 +57,10 @@ const Navbar = () => {
   return (
     <>
       {isMenuOpen && (
-        <div className="w-full h-full fixed bg-gradient-to-b from-darkBlue from-50% to-white opacity-50 z-40 block md:hidden"></div>
+        <div className="w-full h-full bg-gradient-to-b from-darkBlue from-50% to-white opacity-50 z-40 block md:hidden"></div>
       )}
-      <div className="w-full fixed bg-white z-50">
-        <div className="w-full max-w-[1440px] mx-auto px-10 sm:py-5 smMd:px-5 flex items-center justify-between relative">
+      <header className="w-full fixed bg-white z-50">
+        <nav className="w-full max-w-[1440px] mx-auto px-10 sm:py-5 smMd:px-5 flex items-center justify-between relative">
           <Link href="/">
             <Logo />
           </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
           ) : (
             <IconHamburger className="hidden sm:block" onClick={handleMenu} />
           )}
-        </div>
+        </nav>
         {isMenuOpen && (
           <>
             <div
@@ -104,7 +104,7 @@ const Navbar = () => {
             </div>
           </>
         )}
-      </div>
+      </header>
     </>
   );
 };
