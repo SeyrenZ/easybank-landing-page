@@ -21,20 +21,13 @@ const Header = () => {
             </div>
           </div>
           <Image
-            src="/image-mockups-crop.png"
-            width={500}
-            height={500}
+            src="/image-mockups.png"
+            width={750}
+            height={750}
             alt="."
-            className="absolute z-20 right-0 top-0 block xl:hidden smMd:hidden"
+            className=" absolute z-20 right-[-250px] xl:right-[-150px] top-[-70px] smMd:hidden"
           />
-          <Image
-            src="/image-mockups-crop.png"
-            width={600}
-            height={600}
-            alt="."
-            className=" absolute z-20 right-0 top-[-70px] hidden xl:block smMd:hidden"
-          />
-          <div className="w-full h-[680px] pb-10 relative overflow-hidden ">
+          <div className="w-full h-[680px] pb-10 relative">
             <div className="h-full flex items-center smMd:items-start smMd:justify-center relative">
               <IntroBgDesktop className="bottom-[-120px] right-[-600px] xl:right-[-470px] absolute  block smMd:hidden" />
               <div className="flex flex-col gap-y-5 smMd:items-center">
